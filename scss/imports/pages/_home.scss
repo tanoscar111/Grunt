@@ -3,6 +3,7 @@
 main {
     width: 100%;
     position: relative;
+    height: 100vh;
     .slider {
         width: 100%;
         height: 100%;
@@ -16,6 +17,7 @@ main {
                         font-size: 83.33pt;
                         text-transform: uppercase;
                         font-family: peb;
+                        padding-bottom: 50px;
                     }
                     a {
                         text-decoration: none;
@@ -28,8 +30,9 @@ main {
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
-                        width: 250px;
+                        max-width: 250px;
                         letter-spacing: 3px;
+                        
                         i {
                             img {
                                 width: 30px;
@@ -41,6 +44,8 @@ main {
                 }
                 img {
                     width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
                 }
             }
         }
@@ -49,16 +54,30 @@ main {
             width: 100%;
            position: absolute;
            bottom: 0;
-           .container__fluid {
+           .container-fluid {
             display: flex;
             justify-content: space-between;
            }
-            .paging::before {
-                content: "";
-                width: 100px;
-                height: 3px;
-                display: block;
-                position: absolute;
+            
+            .paging {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    font-size: 42pt;
+                    font-family: Peb;
+                    color: $color-titte;
+                    
+                    &::before {
+                        content: "";
+                        width: 44px;
+                        height: 4px;
+                       display: inline-block;
+                       margin: 15px 20px;
+                       background: $color-titte;
+                    }
+                }
             }
         }
     }
