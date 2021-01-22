@@ -1,18 +1,18 @@
 /*primary colors*/
 $white-cl: #fff;
 $black-cl: #000;
-
+$yelow-cl:#bea67c;
 /*global text color*/
-$text-cl: #222;
+$text-cl: #464646;
 $text-black-cl: #000;
 
 /*global bg color*/
-$main-bg-cl: #000;
-$black-bg-cl: #000;
+$main-bg-cl: #ffff;
+$black-bg-cl:$black-cl;
 
 // timing transition
-$t: 0.4s;
-$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+$t: 0.4s;// thời gian animation
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97); // gia tốc
 
 /*font families*/
 $font-stack: "Open Sans", sans-serif;
@@ -29,7 +29,7 @@ $lh-text-m: normal;
 
 /*BOXED LAYOUT*/
 $container-max-width: 1920px;
-$container-width: 1040px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý
+$container-width: 1040px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý đo  cộng thêm 30px nữa
 
 /*GRID - media queries breakpoints*/
 $xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
@@ -46,3 +46,6 @@ $lg-max: ($lg-min - 1); // Large Desktop
 
 $color-text: #ffffff;
 $color-titte:#bea67c;
+html body {
+    --heightHeader:90px;
+}

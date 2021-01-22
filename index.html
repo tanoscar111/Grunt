@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Woonder</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
     <meta name="title" content="" />
     <meta name="description" content="" />
     <!-- meta facebook -->
@@ -16,49 +16,19 @@
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
-
-    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/style.min.css" />
   </head>
 
-  <style>
-    @font-face {
-    font-family: 'Peb';
-    src: url('Font/ProximaNovaA-Extrabld.woff2') format('woff2'),
-        url('Font/ProximaNovaA-Extrabld.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: 'Pr';
-    src: url('Font/ProximaNova-Regular.woff2') format('woff2'),
-        url('Font/ProximaNova-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: 'Pg';
-    src: url('Font/ProximaNova-Bold.woff2') format('woff2'),
-        url('Font/ProximaNova-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: fallback;
-}
-
-
-  </style>
   <body>
     <header>
       <div class="container-fluid">
         <div class="logo">
           <a href="./"><img src="img/Logo/logo.png" alt="" /></a>
-          <h1 class="hidden" style="display: none">Woonder</h1>
+          <h1 class="hidden">Woonder</h1>
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
+        <ul class="menu">
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Gallery</a></li>
@@ -68,6 +38,11 @@
           <div class="lang__Current">
             <span>EN</span>
             <i><img src="img/Icon/arowdow.png" alt="arow" /></i>
+          </div>
+          <div class="lang__Option">
+            <a href="#" class="active">VN</a>
+            <a href="#">JP</a>
+            <a href="#">EU</a>
           </div>
         </div>
       </div>
@@ -84,30 +59,30 @@
                   ><img src="img/Icon/nextring.png" alt="arownext" /></i
               ></a>
             </div>
-            <img src="img/slide/slider1.jpg" alt="slider1" />
+            <img src="img/slide/slider1.jpg" alt="slider1" class="textBox__img" />
           </div>
         </div>
-        <div class="slider__control">
+        <div class="slider__bottom">
           <div class="container-fluid">
-            <div class="paging">
+            <div class="slider__bottom-paging">
               <span>01</span>
               <ul>
-                <li></li>
+                <li class="active"></li>
                 <li></li>
                 <li></li>
               </ul>
             </div>
-            <div class="mouse">
-              <img src="img/Icon/mouse.png" alt="" />
-              <img src="img/Icon/line.png" alt="" />
+            <div class="slider__bottom-mouse">   
+                <img src="img/Icon/mouse.png" alt="" />  
+                <img src="img/Icon/line.png" alt="" />
+            
+          </div>
+          <div class="slider__bottom-control">
+            <div class="controlBtn prev">
+              <i><img src="img/Icon/prev.png" alt="" /></i>
             </div>
-            <div class="control">
-              <div class="control__btn --prev">
-                <i><img src="img/Icon/prev.jpg" alt="" /></i>
-              </div>
-              <div class="control__btn --next">
-                <i><img src="img/Icon/next.jpg" alt="" /></i>
-              </div>
+            <div class="controlBtn next">
+              <i><img src="img/Icon/next.png" alt="" /></i>
             </div>
           </div>
         </div>
