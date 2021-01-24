@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Woonder</title>
-    <link rel="icon" href="favicon.ico" />
-    <meta name="title" content="" />
-    <meta name="description" content="" />
-    <!-- meta facebook -->
-    <meta property="og:locale" content="vi" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Trang chủ" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content="" />
-    <link rel="stylesheet" href="dest/fonts.css" />
-    <link rel="stylesheet" href="dest/style.min.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="logo">
-          <a href="./"><img src="img/Logo/logo.png" alt="" /></a>
-          <h1 class="hidden">Woonder</h1>
-        </div>
-        <ul class="menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">New</a></li>
-        </ul>
-        <div class="lang">
-          <div class="lang__Current">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Woonder</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+  <!-- meta facebook -->
+  <meta property="og:locale" content="vi" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Trang chủ" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:image" content="" />
+  <link rel="stylesheet" href="dest/fonts.css" />
+  <link rel="stylesheet" href="dest/style.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="./"><img src="img/Logo/logo.png" alt="" /></a>
+        <h1 class="hidden">Woonder</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">New</a></li>
+      </ul>
+      <div class="right">
+        <div class=" right__lang">
+          <div class="right__lang-Current">
             <span>EN</span>
             <i><img src="img/Icon/arowdow.png" alt="arow" /></i>
           </div>
-          <div class="lang__Option">
+          <div class="right__lang-Option">
             <a href="#" class="active">VN</a>
             <a href="#">JP</a>
             <a href="#">EU</a>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <!-- slider -->
-      <div class="slider">
-        <div class="slider__list">
-          <div class="slider__list-item">
-            <div class="textBox">
-              <h2>Wooder</h2>
-              <a href="#"
-                >Learn More<i
-                  ><img src="img/Icon/nextring.png" alt="arownext" /></i
-              ></a>
-            </div>
-            <img src="img/slide/slider1.jpg" alt="slider1" class="textBox__img" />
-          </div>
+        <div class="right__lang-hamberger">
+          <span></span>
         </div>
-        <div class="slider__bottom">
-          <div class="container-fluid">
-            <div class="slider__bottom-paging">
-              <span>01</span>
-              <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="slider__bottom-mouse">   
-                <img src="img/Icon/mouse.png" alt="" />  
-                <img src="img/Icon/line.png" alt="" />
-            
+      </div>
+    </div>
+  </header>
+  <nav class="nav">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">New</a></li>
+    </ul>
+  </nav>
+  <main class="mainwrapper homepage">
+    <!-- slider -->
+    <div class="slider">
+      <div class="slider__list">
+        <div class="slider__list-item">
+          <div class="textBox">
+            <h2>Wooder</h2>
+            <a href="#"><span>Learn More</span><i><img src="img/Icon/nextring.png" alt="arownext" /></i></a>
+          </div>
+          <img src="img/slide/slider1.jpg" alt="slider1" class="textBox__img" />
+        </div>
+      </div>
+      <div class="slider__bottom">
+        <div class="container-fluid">
+          <div class="slider__bottom-paging">
+            <span>01</span>
+            <ul>
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="slider__bottom-mouse">
+            <img src="img/Icon/mouse.png" alt="" />
+            <img src="img/Icon/line.png" alt="" />
+
           </div>
           <div class="slider__bottom-control">
             <div class="controlBtn prev">
@@ -87,6 +99,7 @@
           </div>
         </div>
       </div>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>

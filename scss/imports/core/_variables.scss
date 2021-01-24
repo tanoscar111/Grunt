@@ -1,17 +1,17 @@
 /*primary colors*/
 $white-cl: #fff;
 $black-cl: #000;
-$yelow-cl:#bea67c;
+$yelow-cl: #bea67c;
 /*global text color*/
 $text-cl: #464646;
 $text-black-cl: #000;
 
 /*global bg color*/
 $main-bg-cl: #ffff;
-$black-bg-cl:$black-cl;
+$black-bg-cl: $black-cl;
 
 // timing transition
-$t: 0.4s;// thời gian animation
+$t: 0.4s; // thời gian animation
 $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97); // gia tốc
 
 /*font families*/
@@ -45,7 +45,16 @@ $md-max: ($md-min - 1); // Desktop
 $lg-max: ($lg-min - 1); // Large Desktop
 
 $color-text: #ffffff;
-$color-titte:#bea67c;
+$color-titte: #bea67c;
 html body {
-    --heightHeader:90px;
+    --heightHeader: 90px;
+    --paddingSection: 80px;
+    @media (max-width: 991) {
+        --heightHeader: 64px;
+    }
+}
+section {
+    .pd {
+        padding: var(--paddingSection);
+    }
 }

@@ -94,4 +94,9 @@ body {
     @include xxs {
         // CSS responsive small mobile
     }
+    @media (max-width:991px) {
+        .mainwrapper {
+            margin-top: var(--heightHeader);
+        }
+    }
 }
