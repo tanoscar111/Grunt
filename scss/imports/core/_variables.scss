@@ -53,8 +53,7 @@ html body {
         --heightHeader: 64px;
     }
 }
-section {
-    .pd {
-        padding: var(--paddingSection);
-    }
+
+.pd {
+    padding: var(--paddingSection);
 }

@@ -2,3 +2,15 @@
 img {
     max-width: 100%;
 }
+.btnMain {
+    text-decoration: none;
+    color: $black-cl;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: max-content;
+    z-index: 1;
+    position: relative;
+    &__img {
+        @include midimg(100%);
+    }
+}

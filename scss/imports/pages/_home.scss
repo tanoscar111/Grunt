@@ -126,9 +126,28 @@
                 left: 50%;
                 bottom: 30px;
                 transform: translateX(-50%);
+
+                @include transition($t);
+
                 img {
                     &:first-child {
                         margin-bottom: 10px;
+                    }
+                }
+                .line {
+                    animation: scroll 1s ease forwards infinite;
+                    position: relative;
+                }
+                @keyframes scroll {
+                    0% {
+                        @include transform(translateY(0px));
+                        opacity: 0;
+                        @include transition($t);
+                    }
+                    100% {
+                        @include transform(translateY(30px));
+                        opacity: 1;
+                        @include transition($t);
                     }
                 }
             }
