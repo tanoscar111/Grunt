@@ -57,3 +57,47 @@ html body {
 .pd {
     padding: var(--paddingSection);
 }
+.textTitleMain {
+    color: $black-cl;
+    font-size: 40px;
+    line-height: 83px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btnMain {
+    text-decoration: none;
+    color: $color-text;
+    border: 1px solid $color-text;
+    padding: 12px 34px;
+    color: $color-text;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    width: max-content;
+    z-index: 1;
+    position: relative;
+    i {
+        padding-left: 10px;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: $yelow-cl;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: $t;
+    }
+    &:hover {
+        &:after {
+            transform: scaleX(1);
+            transform-origin: right center;
+            transition: $t;
+        }
+    }
+}

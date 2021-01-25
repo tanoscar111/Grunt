@@ -1,0 +1,114 @@
+.video {
+    .container {
+        .intro {
+            &__textbox {
+                padding-left: 0;
+                padding-top: 0;
+                padding-right: 0;
+                text-align: center;
+                max-width: 460px;
+                margin: auto;
+                .textTitleMain {
+                    flex-direction: column-reverse;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        width: 42px;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: $yelow-cl;
+                        margin: 15px auto;
+                    }
+                }
+            }
+            &__video {
+                display: flex;
+                margin-top: 50px;
+                justify-content: space-around;
+                &-item {
+                    .img {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        border: 1px solid #dddddd;
+                        position: relative;
+                        cursor: pointer;
+                        margin-bottom: 20px;
+                        -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+                        -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+                        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+                        &::after {
+                            content: "";
+                            width: calc(100% + 15px);
+                            height: calc(100% + 15px);
+                            border: 15px solid #dddddd;
+                            border-radius: 50%;
+
+                            @include mid;
+                            z-index: 0;
+                        }
+                        > img {
+                            min-width: 100%;
+                            min-height: 100%;
+                            max-width: 400px;
+                            max-height: 400px;
+                            object-fit: cover;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            @include transform(translate(-50%, -50%) scale(1));
+                            filter: grayscale(100%) brightness(60%);
+                            -webkit-filter: grayscale(100%) brightness(60%);
+                            -moz-filter: grayscale(100%) brightness(60%);
+                            @include transition($t);
+                        }
+                        .playVideo {
+                            @include mid();
+                        }
+                        &:hover {
+                            > img {
+                                filter: grayscale(90%);
+                                -webkit-filter: grayscale(90%);
+                                -moz-filter: grayscale(90%);
+                                @include transform(translate(-50%, -50%) scale(1.2));
+                                @include transition($t);
+                            }
+                        }
+                    }
+                    .caption {
+                        text-align: center;
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            width: 42px;
+                            height: 3px;
+                            display: block;
+                            margin: 18px auto;
+                            background: $yelow-cl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .video {
+        .container {
+            .intro {
+                &__video {
+                    flex-direction: column;
+                    align-items: center;
+                    &-item {
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
