@@ -1,1 +1,42 @@
-// css components
+.product__title {
+  padding-left: 100px;
+  padding-top: 80px;
+  padding-right: 20px;
+  .titleMain {
+    font-size: 40px;
+    font-family: pb;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    &:before {
+      content: "";
+      width: 80px;
+      height: 2px;
+      background: #555555;
+      display: inline-block;
+      position: relative;
+      left: -20px;
+      margin-left: -80px;
+    }
+  }
+  &-decription {
+    padding: 10px 0 18px 0;
+    color: $text-cl;
+  }
+  &.--textRight {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 100px;
+    .titleMain {
+      flex-direction: row-reverse;
+      &::before {
+        margin-left: initial;
+        left: initial;
+        margin-right: -80px;
+        right: -20px;
+      }
+    }
+  }
+}
