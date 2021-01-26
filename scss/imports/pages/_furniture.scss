@@ -12,6 +12,14 @@
         grid-row: 1/2;
         text-align: right;
       }
+      .about {
+        text-align: left;
+        .lineItem {
+          &::before {
+            left: -72px;
+          }
+        }
+      }
       .product__img {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -20,6 +28,7 @@
     // direction: rtl;
   }
 }
+
 @media (max-width: 960px) {
   .furniturepage {
     .container {
@@ -35,8 +44,8 @@
             padding-left: 0;
           }
           &.--textRight {
-              text-align: center;
-              padding-right: 0;
+            text-align: center;
+            padding-right: 0;
           }
         }
 
@@ -54,8 +63,8 @@
   .furniturepage {
     .container {
       .product {
-          display: flex;
-          flex-direction: column;
+        display: flex;
+        flex-direction: column;
         &__title {
           padding-left: 0;
           padding-top: 0;
@@ -70,10 +79,13 @@
             padding-left: 0;
           }
         }
+        .about {
+          text-align: center;
+          padding-top: 80px;
+        }
         &__img {
           max-width: 100%;
           width: 100%;
-         
         }
         .btnpro {
           padding-left: 0;
