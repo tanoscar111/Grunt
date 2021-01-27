@@ -20,6 +20,7 @@ body {
     background: $white-cl;
     behavior: smooth;
     position: relative;
+    scroll-behavior: smooth;
     @include customscroll();
     .container {
         width: 100%;

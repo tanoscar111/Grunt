@@ -1,1 +1,25 @@
 // css footer
+footer {
+  background: #000000;
+  padding: 20px 0;
+  color: $white-cl;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .backToTop {
+      text-transform: uppercase;
+      cursor: pointer;
+      color: $white-cl;
+      text-decoration: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    .logoF {
+      padding: 20px 0;
+    }
+  }
+}
